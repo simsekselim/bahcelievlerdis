@@ -369,17 +369,19 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100dvh;             
+
+  height: 100dvh;
   min-height: 100dvh;
-  max-height: 100dvh;
   display: flex;
   align-items: center;
-  will-change: transform;
-  transform: translate3d(0, 0, 0);  
-  -webkit-backface-visibility: hidden;
+  justify-content: center;
+
+  will-change: transform, opacity;
+  transform: translateZ(0);
   backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
 }
+
 
 html, body {
   overscroll-behavior: none;   

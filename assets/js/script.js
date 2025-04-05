@@ -22,11 +22,15 @@ const heroSwiper = new Swiper(".hero-swiper", {
     delay: 4000,
     disableOnInteraction: false,
   },
-  grabCursor: true,
+  speed: 900,
   effect: "slide",
-  speed: 1000,
-  touchStartPreventDefault: false
+  grabCursor: true,
+  touchStartPreventDefault: false,
+  preventInteractionOnTransition: true,
+  virtualTranslate: true,
+  threshold: 10,
 });
+
 
 /**
  * navbar toggle

@@ -271,6 +271,10 @@ body {
   font-family: var(--ff-poppins);
   font-size: 3.4rem;
   font-weight: var(--fw-800);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
 }
 
 .nav-toggle-btn {
@@ -365,10 +369,23 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100dvh;             
+  min-height: 100dvh;
+  max-height: 100dvh;
   display: flex;
   align-items: center;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);  
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
+
+html, body {
+  overscroll-behavior: none;   
+  overflow-x: hidden;
+}
+
 
 .hero-swiper .swiper-wrapper {
   transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1) !important;

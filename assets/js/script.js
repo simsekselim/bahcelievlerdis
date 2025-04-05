@@ -23,10 +23,10 @@ const heroSwiper = new Swiper(".hero-swiper", {
     disableOnInteraction: false,
   },
   grabCursor: true,
-  effect: "slide", 
-  speed: 1200, 
+  effect: "slide",
+  speed: 1000,
+  touchStartPreventDefault: false
 });
-
 
 /**
  * navbar toggle

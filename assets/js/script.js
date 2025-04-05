@@ -25,10 +25,14 @@ const heroSwiper = new Swiper(".hero-swiper", {
   grabCursor: true,
   effect: "slide",
   speed: 1000,
-  touchStartPreventDefault: false,
-  preloadImages: true,
-  lazy: false,
+  observer: true,
+  observeParents: true,
+  preloadImages: false,
+  lazy: {
+    loadPrevNext: true,
+  },
 });
+
 
 /**
  * navbar toggle
